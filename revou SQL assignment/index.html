@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RevoU SQL Assignment</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong>RevoU SQL Assignment</strong>
+				</div>
+				<div class="inner">
+					<a href="https://adytiapp.github.io/adytia_uwak_portfolio/" class="button small">Home</a>
+					<a href="https://adytiapp.github.io/adytia_uwak_projects.html" class="button small">Projects</a>
+					<a href="https://adytiapp.github.io/adytia_uwak_articles.html" class="button small">Articles</a>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>RevoU SQL Assignment</h1>
+						</header>
+						
+						<h2>Project Summary</h2>
+						<ol>
+							<li>Creatied SQL query based on business problem using aggregate functions, date format, joins, CTE, and window function.</li>
+							<li>Created monthly retention cohort analysis using SQL function to help retain users.</li>
+					  	</ol>
+						<br>
+
+						<h2>Insights</h2>
+						<ol>
+							<li>As time goes by the number of orders is increasing until it reaches the highest number of orders in November 2017 of 6,581 orders. Then the number of orders decreased and increased until the last in August 2018 as many as 6,313 orders.</li>
+							<li>It can be concluded that the peak day is Tuesday, where the total number of orders reached 17660 orders.</li>
+							<li>The most obtained were credit cards with a percentage of 73.21%, followed by boleto with a percentage of 19.33%, vouchers at 5.93%, and finally debit cards at 1.53%.</li>
+							<li>Obtained 4 clusters based on elbow method and silhouette analysis.</li>
+					  	</ol>
+						
+						<p><h2>Project Files</h2></p>
+						For a more comprehensive analysis and visualization, please open the project files.
+						<ul>
+							<li><a href="assets/W4W5_adytia_pradana_intermediate&advanced.pptx">Presentation Deck</a></li>
+							<li><a href="https://colab.research.google.com/drive/1fhlzLswWF8F9vxbDC_xoXxZSRNx6FQE6?usp=sharing">Query Code - Google BigQuery</a></li>
+							<li><a href="https://github.com/adytiapp/revou_sql_assignment">Github Repository</a></li>
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Project Background</h2>
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-5"><span class="image fit"><img src="images/sql_assignment_cover.png"></span></div>
+							</div><br>
+							<p>As a data analyst, we are expected to use SQL to access, read, manipulate, and analyze the data stored in the database and generate useful insights to drive an informed decision-making process. Therefore, we tested our level of comprehension by doing the following assignment.</p>
+					</section>
+				
+				<!-- Three -->
+				<section id="three">
+					<h2>Data Scope, Goals & Objectives</h2>
+					<h3>Intermediate Assignment | <a href="https://console.cloud.google.com/marketplace/product/san-francisco-public-data/sf-bike-share?project=intermediate-340615">San Fransisco Ford GoBike Dataset</a></h3>
+						<p>This dataset was provided by google bigquery public data in google cloud platform. San Francisco Ford GoBike , managed by Motivate, provides the Bay Area’s bike share system. Bike share is a convenient, healthy, affordable, and fun form of transportation. It involves a fleet of specially designed bikes that are locked into a network of docking stations. Bikes can be unlocked from one station and returned to any other station in the system. People use bike share to commute to work or school, run errands, get to appointments, and more. The dataset contains trip data from 2013-2018, including start time, end time, start station, end station, and latitude/longitude for each station.</p>
+					<h3>Advanced Assignment | <a href="https://console.cloud.google.com/marketplace/product/y-combinator/hacker-news?project=secret-tempest-327803">Hacker News Dataset</a></h3>
+						<p>This dataset was provided by google bigquery public data in google cloud platform. This dataset contains all stories and comments from Hacker News from its launch in 2006 to present. Each story contains a story ID, the author that made the post, when it was written, and the number of points the story received.</p>
+					<h3>Goals</h3>
+						<p>Understand basic to advanced SQL function to help access, read, manipulate, and analyze the data stored in the database and generate useful insights to drive an informed decision-making process.</p>
+					<h3>Objectives</h3>
+						<ol>
+							<li>Creating SQL query based on business problem using aggregate functions, date format, joins, CTE, and window function.</li>
+							<li>Creating monthly retention cohort analysis to help retain users.</li>
+						</ol>
+				</section>	
+
+				<!-- Four -->
+				<section id="four">
+					<h2>Intermediate Assignment</h2>
+
+						<p><b>1. Create a query to get the average amount of duration (in minutes) per month</b></p>
+						<script src="https://pastebin.com/embed_js/XaxDbYRi"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-3"><span class="image fit"><img src="images/intermediate_1.png"></span></div>
+						</div>
+						<p>December is the month with the longest average bicycle rental duration with 23.81 minutes, followed by July with 17.31 minutes and June with 16.99 minutes.</p>
+
+						<p><b>2. Create a query to get total trips and total number of unique bikes grouped by region name</b></p>
+						<script src="https://pastebin.com/embed_js/JDKvSgBZ"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-3"><span class="image fit"><img src="images/intermediate_2.png"></span></div>
+						</div>
+						<p>San Francisco has the most total trips and bikes, followed by Oakland, and finally San Jose.</p>
+
+						<p><b>3. Find the youngest and oldest age of the members, for each gender. Assume this year is 2022.</b></p>
+						<script src="https://pastebin.com/embed_js/v3sacJie"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-3"><span class="image fit"><img src="images/intermediate_3.png"></span></div>
+						</div>
+						<p>The male gender has the oldest age of 136 years and the youngest age of 22 years. The female gender has the oldest age of 122 years and the youngest age of 22 years. Gender others have the oldest age 122 years and the youngest age 22 years.</p>
+
+						<p><b>4. Get the latest departure trip in each region.</b></p>
+						<script src="https://pastebin.com/embed_js/putiNJMx"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8"><span class="image fit"><img src="images/intermediate_4.png"></span></div>
+						</div>
+						<p>The last recorded departure trip was on 2016-08-31 from Washington at Keamy station.</p>
+
+						<p><b>5. Create a query to get Month to Date of total trips in each region, breakdown by date.</b></p>
+						<script src="https://pastebin.com/embed_js/zbHWGXrw"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-3"><span class="image fit"><img src="images/intermediate_5.png"></span></div>
+						</div><br>
+
+					<h2>Advanced Assignment</h2>
+
+						<p><b>6. Find monthly growth of trips in percentage, ordered by time descendingly. Only for trips from the region that has the highest total number of trips.</b></p>
+						<script src="https://pastebin.com/embed_js/Y0LxmUgF"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/advanced_1.png"></span></div>
+						</div><br>
+						<p>July 2017 was the month with the highest growth percentage of 1311% and June 2017 was the month with the lowest growth percentage of -91%.</p>
+
+						<p><b>7. Given another dataset (Hacker News) please use table “stories” to create monthly retention cohorts (the groups, or cohorts, can be defined based upon the date that a user/author started a story) and then how many of them (%) coming back for the following monts in 2014. After analyzing the retention cohort, is there any interesting insight that we can get?</b></p>
+						<script src="https://pastebin.com/embed_js/6e4F7bW4"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="images/advanced_2.png"></span></div>
+						</div><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8"><span class="image fit"><img src="images/advanced_3.png"></span></div>
+						</div><br>
+						<p>The number of story posts has decreased continuously from Feb 2014 until Dec 2014. It is shown by graph above, monthly. The forum needs to improve its user engagement and retention immediately since this decrease in activity has become a trend (downtrend).</p>
+				</section>
+
+					<br>
+				
+					<a href="https://adytiapp.github.io/adytia_uwak_portfolio/" class="button small">Home</a>
+					<a href="https://adytiapp.github.io/adytia_uwak_projects.html" class="button small">Projects</a>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/adytia-putra-pradana-4b9493152/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/adytiapp/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instagram.com/adytiapp/" class="icon brands fa-instagram"><span class="label">Dribbble</span></a></li>
+						<li><a href="mailto:adytiapp@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Adytia Uwak</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
